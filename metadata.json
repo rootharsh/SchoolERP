@@ -1,0 +1,6 @@
+{
+  "name": "ClassSec Gujarat School ERP",
+    "description": "ClassSec - Modern bilingual (English & Gujarati) School ERP & Governance Platform designed specifically for prestigious private GSEB K-12 institutions across Rajkot (The Royal International Academy), Junagadh (Apex Global Gurukul & Science Academy), and Keshod (The Heritage International School), featuring G.R. records, Ekam Kasoti & PAT grading, Leaving Certificate (L.C.) generation, Fee counter with UPI receipts, D3.js trend charts, and dedicated Principal, Teacher, Student, Parent, and Super Admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
