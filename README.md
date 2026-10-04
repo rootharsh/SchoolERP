@@ -1,136 +1,91 @@
-# ClassSec — Gujarat GSEB School ERP & Governance System
+<div align="center">
 
-> **Bilingual (English & ગુજરાતી) Enterprise Management Platform for K-12 Self-Financed Institutions in Gujarat**
+# 🏫 ClassSec
 
-![ClassSec Banner](https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80)
+### Modern School ERP for Gujarat's private schools
+
+GSEB-aligned administration, fees and academics in one place. Bilingual: **English & ગુજરાતી**.
+
+**[🌐 Live demo](https://school-erp-pearl.vercel.app)**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat&logo=typescript&logoColor=3178c6)
+![Bun](https://img.shields.io/badge/Bun-0d1117?style=flat&logo=bun&logoColor=fbf0df)
+![D3.js](https://img.shields.io/badge/D3.js-0d1117?style=flat&logo=d3dotjs&logoColor=f9a03c)
+![Vercel](https://img.shields.io/badge/Vercel-0d1117?style=flat&logo=vercel&logoColor=white)
+![GSEB](https://img.shields.io/badge/GSEB-compliant-2ea043?style=flat)
+
+<!-- Add a dashboard screenshot here, e.g. ![ClassSec dashboard](docs/dashboard.png) -->
+
+</div>
 
 ---
 
 ## 📌 Overview
 
-**ClassSec** is a state-aligned, full-featured Educational Resource Planning (ERP) and campus governance system tailored specifically for private, self-financed schools under the **Gujarat Secondary and Higher Secondary Education Board (GSEB)**. 
+**ClassSec** is a full-featured Educational Resource Planning (ERP) and campus governance system built for private, self-financed schools under the **Gujarat Secondary and Higher Secondary Education Board (GSEB)**.
 
-Engineered with dual-language fluency (**English & ગુજરાતી**) and compliance with **UDISE+ and Gujarat Education Department** standards, ClassSec bridges campus administration, academic operations, state grading schemas, fee management with instant QR receipts, and role-gated portals.
-
----
+It handles the paperwork schools actually deal with every day: statutory registers, leaving certificates, state grading schemes and fee collection, with compliance to **UDISE+** and Gujarat Education Department standards.
 
 ## ✨ Key Features
 
-### 🏛️ 1. GSEB Compliance & Statutory Documentation
-- **General Register (G.R. Book)**: Digital General Register with immutable G.R. numbers, UDISE+ student IDs, Aadhaar Dise validation, caste/category tracking, and automated roll allocation.
-- **School Leaving Certificate (L.C. / T.C.)**: One-click generation of official bilingual Leaving Certificates with GSEB watermark, conduct remarks, progress assessments, and print-ready layouts.
-- **Gujarat State Board Grading**: Full support for **Ekam Kasoti (એકમ કસોટી)**, **Periodic Assessment Tests (PAT)**, Pratham Pariksha (Semester 1), and Varshik Pariksha (Annual Exam) with 8-point GSEB grading scales (A1 to E2).
+### 🏛️ GSEB compliance & statutory documents
+- **General Register (G.R. Book)** with immutable G.R. numbers, UDISE+ student IDs and automated roll allocation
+- **School Leaving Certificate (L.C. / T.C.)** generated in one click, bilingual, with GSEB watermark and print-ready layout
+- **Gujarat state grading:** Ekam Kasoti (એકમ કસોટી), Periodic Assessment Tests (PAT), Pratham Pariksha (Semester 1) and Varshik Pariksha (Annual), using the 8-point GSEB scale (A1 to E2)
 
-### 💳 2. Multi-Campus Fee Counter & Accounts
-- **Dynamic Fee Structures**: Manage Tuition, Lab, Computer, Term, and Transport fees by grade level.
-- **Instant UPI QR & Receipts**: Real-time payment collection with BharatQR/UPI integration, receipt numbering (`REC-2026-XXXX`), printable thermal/A4 vouchers, and fee clearance certificates.
-- **Defaulter Tracking**: Real-time dues tracking and SMS/WhatsApp alert dispatch for outstanding balances.
+### 💳 Multi-campus fee counter & accounts
+- **Dynamic fee structures:** tuition, lab, computer, term and transport fees by grade
+- **Instant UPI QR & receipts** with BharatQR/UPI, numbered receipts (`REC-2026-XXXX`), printable thermal/A4 vouchers and fee clearance certificates
+- **Defaulter tracking** with SMS/WhatsApp alerts for outstanding balances
 
-### 👥 3. Multi-Role Institutional Portals
-- **👑 Trustee / Super Admin**: Multi-campus overview across Rajkot, Junagadh, and Keshod campuses; revenue analytics; institutional audit logs.
-- **🛡️ Principal**: Staff oversight, timetable management, admission approvals, circulars, and board registration.
-- **📚 Class Teacher (વર્ગ શિક્ષક)**: Daily attendance register (હાજરી પત્રક), marks entry for Ekam Kasoti, remarks, and homework broadcast.
-- **🎓 Student**: Academic report cards, download L.C., timetable view, homework tracker, and attendance summary.
-- **👨‍👩‍👧 Parent (વાલીશ્રી)**: Child performance tracking, online fee payment, bus transport tracker, and direct messaging with teachers.
+### 👥 Role-based institutional portals
+- **Trustee / Super Admin:** multi-campus overview and revenue analytics (D3.js charts)
+- Separate portals for the other staff and parent roles, each with only the access they need
 
-### 🌐 4. Full Bilingual Experience (English & ગુજરાતી)
-- Instant, non-reloading toggle between **English** and **ગુજરાતી**.
-- Proper Gujarati typography (લૉગિન, હાજરી, પરીક્ષા પરિણામ, ફી રસીદ, સામાન્ય રજીસ્ટર) across all views, reports, and generated PDF printouts.
+## 🧰 Tech stack
 
-### 🔒 5. Security & Multi-Factor Authentication
-- Role-based access control (RBAC).
-- Simulated **Two-Factor Authentication (2FA / TOTP)** for administrative actions.
-- Audit trail for sensitive records (G.R. updates, mark modifications, fee discounts).
+| Layer | Tech |
+|---|---|
+| Language | TypeScript |
+| Runtime / package manager | Bun |
+| Backend | `server.ts` |
+| Analytics | D3.js |
+| Hosting | Vercel |
 
----
+## 🚀 Getting started
 
-## 🚀 Demo Persona Accounts
-
-You can test ClassSec immediately using one-click pass selection on the login page:
-
-| Role | Name | Email | Password | Default 2FA Code |
-| :--- | :--- | :--- | :--- | :--- |
-| **Principal** | Dr. Vinodbhai C. Pandya | `principal@avinyagurukul.edu.in` | `gseb2026` | `123456` |
-| **Class Teacher** | Smt. Neetaben R. Patel | `neeta.patel@avinyagurukul.edu.in` | `gseb2026` | `123456` |
-| **Student** | Harsh V. Patel (G.R. 4821) | `harsh.patel@student.avinyagurukul.edu.in` | `gseb2026` | `123456` |
-| **Parent** | Shri Vinodbhai K. Patel | `vinodbhai.patel@gmail.com` | `gseb2026` | `123456` |
-| **Trustee Admin** | Shri Pravinbhai G. Patel | `trustee@avinyagurukul.edu.in` | `gseb2026` | `123456` |
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend Framework**: React 19 + TypeScript + Vite 6
-- **Styling**: Tailwind CSS v4 (Light neutral aesthetic with refined typography and soft mesh accents)
-- **Icons**: Lucide React
-- **Animations**: Motion (`motion/react`)
-- **Backend / Mock State**: React Context API with state persistence and session storage
-- **Bilingual Engine**: Custom lightweight i18n context for synchronized Gujarati/English translation
-
----
-
-## 📦 Project Structure
-
-```
-├── src/
-│   ├── components/
-│   │   ├── academic/       # Ekam Kasoti, PAT, exams, and report cards
-│   │   ├── admin/          # Trustee, campus analytics, and audit logs
-│   │   ├── attendance/     # Daily attendance registers & monthly summaries
-│   │   ├── auth/           # Login screen, persona switcher & 2FA modal
-│   │   ├── certificates/   # Leaving Certificate (L.C.) & Bonafide generation
-│   │   ├── common/         # Header, navigation, logos, and UI primitives
-│   │   ├── fees/           # Fee collection, UPI QR, receipts & dues
-│   │   ├── parent/         # Parent portal & ward tracking
-│   │   ├── student/        # Student dashboard & self-service
-│   │   └── students/       # General Register (G.R.) directory & profile views
-│   ├── context/
-│   │   ├── AuthContext.tsx     # Role authentication & user state
-│   │   └── LanguageContext.tsx # Dual-language (EN / GU) manager
-│   ├── types/
-│   │   └── erp.ts          # Comprehensive TypeScript schemas for GSEB models
-│   ├── App.tsx             # Main router & portal view controller
-│   ├── main.tsx            # React application entry point
-│   └── index.css           # Global Tailwind CSS imports & theme definitions
-├── package.json
-├── vite.config.ts
-└── README.md
+```bash
+git clone https://github.com/rootharsh/SchoolERP.git
+cd SchoolERP
+bun install
+cp .env.example .env   # then fill in your own values
+bun run dev
 ```
 
----
+> Check `package.json` for the exact script names if `dev` differs.
 
-## 💻 Local Development Setup
+## 🔐 Security & data note
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repo-url>
-   cd classsec-gujarat-erp
-   ```
+This project deals with student information (IDs, certificates, fee records).
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+- The demo runs on **fake data only**
+- Never commit real student records, Aadhaar-related data, or a real `.env` file
+- Keep secrets in environment variables; `.env.example` shows the variable names only
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-   The application will run at `http://localhost:3000`.
+## 🗺️ Roadmap
 
-4. **Production Build**:
-   ```bash
-   npm run build
-   ```
+- [ ] More report exports (PDF/Excel)
+- [ ] Parent mobile view improvements
+- [ ] Automated backup and audit log
 
-5. **Type Check / Lint**:
-   ```bash
-   npm run lint
-   ```
+## 👤 Author
+
+**Harsh R.** is a cybersecurity student, web developer and guitarist.
+
+- 🌐 Portfolio: [harshsec.in](https://harshsec.in)
+- 💻 GitHub: [@rootharsh](https://github.com/rootharsh)
+- 📸 Instagram: [@harsh.sec](https://instagram.com/harsh.sec)
 
 ---
 
-## 📄 License & Attribution
-
-Designed for educational institutions in Gujarat following GSEB standards.  
-© 2026 **ClassSec Gujarat School ERP** • Built with craftsmanship and cultural alignment.
+<div align="center"><sub>Built with ❤️ for Gujarat's schools by Harsh R.</sub></div>
