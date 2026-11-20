@@ -6,7 +6,7 @@
 
 GSEB-aligned administration, fees and academics in one place. Bilingual: **English & ગુજરાતી**.
 
-**[🌐 Live demo](https://school-erp-pearl.vercel.app)**
+
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat&logo=typescript&logoColor=3178c6)
 ![Bun](https://img.shields.io/badge/Bun-0d1117?style=flat&logo=bun&logoColor=fbf0df)
